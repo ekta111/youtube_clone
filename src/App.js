@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
 import Feed from "./components/Feed";
-import SearchResult from "./components/SearchResultVideoCard.jsx";
+import SearchResult from "./components/SearchResult.jsx";
 import VideoDetails from "./components/VideoDetails";
 import { AppContext } from "./context/contextApi";
 

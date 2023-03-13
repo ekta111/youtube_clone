@@ -12,6 +12,7 @@ import { CgClose } from "react-icons/cg";
 
 import { Context } from "../context/contextApi";
 import Loader from "../shared/loader";
+import LeftNav from "./LeftNav";
 
 const Header = () => {
     const [searchQuery, setSearchQuery] = useState("");
@@ -30,7 +31,10 @@ const Header = () => {
     };
 
     const mobileMenuToggle = () => {
+ 
         setMobileMenu(!mobileMenu);
+        
+      
     };
 
     const { pathname } = useLocation();
@@ -48,6 +52,8 @@ const Header = () => {
                     >
                         {mobileMenu ? (
                             <CgClose className="text-white text-xl" />
+                            
+                            
                         ) : (
                             <SlMenu className="text-white text-xl" />
                         )}
